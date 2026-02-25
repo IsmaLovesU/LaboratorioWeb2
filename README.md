@@ -5,7 +5,7 @@
 This project is a web-based interactive story inspired by the concept of "Choose Your Own Adventure" (COYA) books and Plato’s Allegory of the Cave. It also allows the user to make decisions at different points, leading to multiple possible paths and three different endings: a good ending, a neutral ending, and a bad ending.
 
 Watch the video demonstration here:
-[Click here to watch the video on YouTube](https://youtu.be/-qGIrwAaH5k)
+[Click here to watch the video on YouTube](https://youtu.be/qmItut9RUYQ)
 
 ## Project Structure
 

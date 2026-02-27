@@ -1,0 +1,63 @@
+/* Zona donde van los botones de decisión */
+.decision-zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+/* aspecto normal */
+.choice-button {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  padding: 0.75rem 1.5rem;
+
+  background-color: var(--color-card);
+  color: var(--color-text);
+  border: 1px solid var(--color-primary);
+  border-radius: 6px;
+
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  text-align: center;
+
+  /* Transición suave para hover y active */
+  transition: background-color var(--transition-fast),
+              color            var(--transition-fast),
+              transform        var(--transition-fast),
+              box-shadow       var(--transition-fast);
+}
+
+/* Estado 2: hover */
+.choice-button:hover {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(201, 147, 58, 0.35);
+}
+
+/* Estado 3: active */
+.choice-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Estado 4: focus-visible */
+.choice-button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
+/* Borde rojo para decisiones peligrosas */
+.choice-button--critical {
+  border-color: var(--color-danger);
+}
+
+.choice-button--critical:hover {
+  background-color: var(--color-danger);
+  box-shadow: 0 6px 18px rgba(192, 64, 64, 0.35);
+}

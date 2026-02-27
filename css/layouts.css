@@ -1,0 +1,38 @@
+/* Layout de los finales */
+.ending-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--spacing-md);
+}
+
+.ending-layout p {
+  text-align: center;
+  max-width: 55ch;
+}
+
+/* Botones de navegación en páginas de final */
+.nav-back {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+
+@media (min-width: 640px) {
+  .scene-layout {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 600px) {
+  .nav-back {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

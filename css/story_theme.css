@@ -1,0 +1,52 @@
+/* Import de las fuentes de Google */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=EB+Garamond&display=swap');
+
+:root {
+
+  /* Colores según el momento de la historia */
+
+  /* Inicio */
+  --bg-inicio: #0d0a06;
+  --color-inicio: #c9933a;
+
+  /* Decisión */
+  --bg-decision: #080d14;
+  --color-decision: #4d9ecf;
+
+  /* Final positivo*/
+  --bg-final-positivo: #0d1008;
+  --color-final-positivo: #7ec85a;
+
+  /* Final negativo*/
+  --bg-final-negativo: #110808;
+  --color-final-negativo: #c04040;
+
+  /* Final neutro */
+  --bg-final-neutro: #0d0d0d;
+  --color-final-neutro: #888888;
+
+  /* Colores generales */
+  --color-primary:   #c9933a;   
+  --color-bg:        #0d0a06;  
+  --color-card:      #1a1208;   
+  --color-border:    #3d2e18;   
+  --color-text:      #e8dcc8;   
+  --color-text-dim:  #7a6a52;   
+  --color-danger:    #c04040;   
+
+  /* Tipografía */
+  --font-heading: 'Cinzel', serif;
+  --font-body:    'EB Garamond', serif;
+
+  /* Espaciado */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 3rem;
+
+  /* Velocidades de transición */
+  --transition-fast:   200ms ease-in-out;
+  --transition-normal: 400ms ease-in-out;
+  --transition-slow:   700ms ease-out;
+
+}

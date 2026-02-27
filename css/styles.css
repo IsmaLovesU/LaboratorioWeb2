@@ -1,188 +1,104 @@
-
-/* Importamos el sistema de diseño primero */
-@import url('design-system.css');
-
-/* Import de Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-
-
-
-/* elimina márgenes demás */
+/* Elimina márgenes y rellenos por defecto */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-/* estilos base */
+/* Fondo y fuente general de toda la página */
 body {
-    background-color: var(--color-bg);
-    color: var(--color-text);
-    font-family: var(--font-body);
-    font-size: 1.05rem;
-    line-height: 1.8;
-    min-height: 100vh;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  min-height: 100vh;
 
-    /* Layout principal con Flexbox */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  /* Flexbox para centrar el contenido */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
-/* parte principal */
-/* Limita el ancho del contenido para que sea legible */
+/* Caja central que limita el ancho del texto */
 .contenedor {
-    width: 100%;
-    max-width: 780px;
-    margin: 0 auto;
-    padding: var(--spacing-lg);
+  width: 100%;
+  max-width: 760px;
+  padding: var(--spacing-lg) var(--spacing-md);
+  flex: 1;
 }
 
-
-/* titulos */
+/* Título principal */
 h1 {
-    font-family: 'Cinzel', var(--font-heading);
-    font-size: 2.2rem;
-    color: var(--color-secondary);
-    margin-bottom: var(--spacing-md);
-    text-align: center;
-    letter-spacing: 0.05em;
-
-    text-shadow: 0 0 20px rgba(201, 147, 58, 0.3);
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+  letter-spacing: 0.05em;
 }
 
+/* Subtítulo de decisión */
 h2 {
-    font-family: 'Cinzel', var(--font-heading);
-    font-size: 1.3rem;
-    color: var(--color-secondary);
-    margin-top: var(--spacing-lg);
-    margin-bottom: var(--spacing-md);
-    text-align: center;
-    letter-spacing: 0.03em;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--color-primary);
+  text-align: center;
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
 }
 
-
-/* parrafos */
+/* Párrafos de narrativa */
 p {
-    margin-bottom: var(--spacing-md);
-    text-align: justify;
-    color: var(--color-text);
+  margin-bottom: var(--spacing-md);
+  text-align: justify;
 }
 
+/* Palabras en negrita */
+b, strong {
+  color: var(--color-primary);
+}
 
-/* imagenes */
+/* Imágenes */
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: var(--spacing-lg) auto;
-    border-radius: var(--radius-md);
-
-    /* Borde dorado tenue alrededor de la imagen */
-    border: 2px solid var(--color-border);
-
-    /* Sombra para que "flote" sobre el fondo */
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: var(--spacing-md) auto;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
 }
 
-
-/* Links para las decision */
-a {
-    display: block;
-    width: fit-content;
-    margin: var(--spacing-sm) auto;
-    padding: 0.7rem 1.8rem;
-
-    color: var(--color-text);
-    background-color: var(--color-card);
-    border: 1px solid var(--color-secondary);
-    border-radius: var(--radius-sm);
-
-    text-decoration: none;
-    font-family: var(--font-heading);
-    font-size: 0.95rem;
-    letter-spacing: 0.04em;
-
-    /* Transición suave para el efecto hover */
-    transition: background-color 0.3s ease,
-                color 0.3s ease,
-                transform 0.2s ease,
-                box-shadow 0.3s ease;
-}
-
-/* Pseudoclase: hover cuando el mouse pasa encima */
-a:hover {
-    background-color: var(--color-secondary);
-    color: var(--color-primary);
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(201, 147, 58, 0.4);
-    cursor: pointer;
-}
-
-/* Pseudoclase: active cuando se hace click */
-a:active {
-    transform: translateY(0px);
-    box-shadow: none;
-}
-
-
-/* texto pequeño */
+/* Texto pequeño de créditos de imagen */
 small {
-    font-size: 0.75rem;
-    color: var(--color-text-dim);
-    font-style: italic;
-    display: block;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: var(--spacing-md);
+  display: block;
+  font-size: 0.72rem;
+  color: var(--color-text-dim);
+  font-style: italic;
+  text-align: center;
+  margin-bottom: var(--spacing-md);
 }
 
-
-/* footer */
+/* Footer */
 footer {
-    margin-top: auto;
-    padding: var(--spacing-md);
-    text-align: center;
-    color: var(--color-text-dim);
-    font-size: 0.8rem;
-    border-top: 1px solid var(--color-border);
-    width: 100%;
-    max-width: 780px;
+  width: 100%;
+  max-width: 760px;
+  padding: var(--spacing-md);
+  text-align: center;
+  color: var(--color-text-dim);
+  font-size: 0.8rem;
+  border-top: 1px solid var(--color-border);
 }
 
-
-/* Pequeña animacion */
-/* Hace que el contenido aparezca suavemente al cargar */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(16px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.contenedor {
-    animation: fadeIn 0.8s ease forwards;
-}
-
-
-/* Responsive */
+/* Pantallas pequeñas */
 @media (max-width: 600px) {
-    h1 {
-        font-size: 1.6rem;
-    }
+  h1 {
+    font-size: 1.5rem;
+  }
 
-    .contenedor {
-        padding: var(--spacing-md);
-    }
-
-    a {
-        width: 100%;
-        text-align: center;
-    }
+  .contenedor {
+    padding: var(--spacing-md) var(--spacing-sm);
+  }
 }
